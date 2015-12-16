@@ -24,7 +24,7 @@
     "version" : "1.1.1",
     "depends" : ["base",'crm'],
     "author" : "closemarketing",
-    "description": 'Adds Social Media in Leads, Opportunities and Partners.'
+    "description": """'Adds Social Media in Leads, Opportunities and Partners.'
     """,
     "website" : "",
     'images': [],
