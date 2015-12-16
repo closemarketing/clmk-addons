@@ -6,7 +6,7 @@
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
-                <field name="website" widget="url" placeholder="www.domain.com" position="after">
+                <xpath expr="/form/sheet/group/group[2]" position="after">
                     <group col="3" colspan="2">     
                         <field name="facebook"/>
                         <button name="goto_facebook" string="Go" type="object"/>
@@ -15,7 +15,7 @@
                         <field name="linkedin"/>
                         <button name="goto_linkedin" string="Go" type="object"/>
                     </group>    
-                </field>    
+                </xpath>    
                 <field name="email" position="after">
                     <field name="skype"/>
                 </field>

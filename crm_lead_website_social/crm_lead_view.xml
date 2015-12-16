@@ -7,13 +7,13 @@
             <field name="model">crm.lead</field>
             <field name="inherit_id" ref="crm.crm_case_form_view_leads"/>
             <field name="arch" type="xml">
-                <xpath expr="/form/sheet/group/group[1]" position="inside">
+                <xpath expr="/form/sheet/group/group[2]" position="after">
                     <group col="3" colspan="2">     
                         <field name="facebook"/>
                         <button name="goto_facebook" string="Go" type="object"/>
                         <field name="twitter"/>
                         <button name="goto_twitter" string="Go" type="object"/>
-                        <field name="linkedin"/>
+                        <field name="linkedin" widget="url"/>
                         <button name="goto_linkedin" string="Go" type="object"/>
                     </group>  
                 </xpath>    
@@ -29,7 +29,7 @@
             <field name="model">crm.lead</field>
             <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
             <field name="arch" type="xml">
-                <xpath expr="/form/sheet/group/group[1]" position="inside">
+                <xpath expr="/form/sheet/group/group[2]" position="after">
                     <group col="3" colspan="2">     
                         <field name="facebook"/>
                         <button name="goto_facebook" string="Go" type="object"/>
