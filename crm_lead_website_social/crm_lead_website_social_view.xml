@@ -6,7 +6,7 @@
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
-                <field name="website" position="after">
+                <field name="website" widget="url" placeholder="www.domain.com" position="after">
                     <group col="3" colspan="2">     
                         <field name="facebook"/>
                         <button name="goto_facebook" string="Go" type="object"/>

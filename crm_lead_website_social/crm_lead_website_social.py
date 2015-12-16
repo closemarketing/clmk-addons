@@ -68,16 +68,14 @@ class res_partner(osv.osv):
                                   'http://linkedin.com/', 'http://www.linkedin.com/']
             non_protocol_starting_urls = ['linkedin.com/', 'www.linkedin.com/']
             
-            if any(map(lambda x: partner.twitter.startswith(x), good_starting_urls)):
-                url = partner.twitter
-            elif any(map(lambda x: partner.twitter.startswith(x), non_protocol_starting_urls)):
-                url = 'https://' + partner.twitter
+            if any(map(lambda x: partner.linkedin.startswith(x), good_starting_urls)):
+                url = partner.linkedin
+            elif any(map(lambda x: partner.linkedin.startswith(x), non_protocol_starting_urls)):
+                url = 'https://' + partner.linkedin
             else:
                 url = 'https://www.linkedin.com/' + partner.twitter
             
             return {'type': 'ir.actions.act_url', 'url': url, 'target': 'new'}
-
-
 
 
 
