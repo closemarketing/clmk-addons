@@ -29,7 +29,7 @@
             <field name="model">crm.lead</field>
             <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
             <field name="arch" type="xml">
-                <xpath expr="/form/sheet/group/group[2]" position="after">
+                <xpath expr="/form/sheet/group/group[3]" position="after">
                     <group col="3" colspan="2">     
                         <field name="facebook"/>
                         <button name="goto_facebook" string="Go" type="object"/>
